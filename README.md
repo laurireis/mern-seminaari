@@ -1,6 +1,8 @@
 <div align="center">
   <h1>To Do List MERN-seminaari</h1>
   <p>Kurssin Ohjelmistokehityksen teknologioita -seminaarityö</p>
+  <a href="https://github.com/laurireis/mern-seminaari">Projektin repositorio</a> <br />
+  <a href="https://youtu.be/sxl1i0_e2ys">Sovelluksen esittelyvideo</a>
 </div>
 
 ## Johdanto
