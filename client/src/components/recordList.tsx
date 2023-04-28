@@ -19,8 +19,15 @@ const Record = (props) => (
   </tr>
 );
 
+export interface RecordListProps {
+  _id: string;
+  description: string;
+  priority: string;
+  date: string;
+}
+
 export default function RecordList() {
-  const [records, setRecords] = useState([]);
+  const [records, setRecords] = useState<RecordListProps[]>([]);
   const [searchQuery, setSearchQuery] = useState('');
 
   const filteredTodos = records.filter((record) => {
