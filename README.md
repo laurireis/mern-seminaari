@@ -35,6 +35,8 @@ Alussa oli paljon hankaluuksia. Vaikka projekti ei näytä siltä, että siihen 
 
 Näistä kommelluksista huolimatta projekti muuten sujui hyvin. MongoDB vaikuttaa kohtuullisen aloittajaystävälliseltä (olettaen että minun ongelmani ovat suhteellisen subjektiivisia) ja tästä on hyvä jatkaa, kun on saavuttanut seuraavan tason lähemmäs Mongo-gurua.
 
+[⬆️ Takaisin ylös](#johdanto)
+
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [mern-tutorial-url]: https://www.mongodb.com/languages/mern-stack-tutorial
