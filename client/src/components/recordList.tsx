@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const Record = (props) => (
+const Record = (props: any) => (
   <tr>
     <td>{props.record.description}</td>
     <td>{props.record.priority}</td>
@@ -19,7 +19,7 @@ const Record = (props) => (
   </tr>
 );
 
-export interface RecordListProps {
+interface RecordListProps {
   _id: string;
   description: string;
   priority: string;
@@ -55,7 +55,7 @@ export default function RecordList() {
   }, [records.length]);
 
   // This method will delete a record
-  async function deleteRecord(id) {
+  async function deleteRecord(id: string) {
     await fetch(`http://localhost:5000/${id}`, {
       method: "DELETE"
     });

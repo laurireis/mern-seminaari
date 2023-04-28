@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { FormEvent, useState } from "react";
 import { useNavigate } from "react-router";
 
 export default function Create() {
@@ -10,14 +10,14 @@ export default function Create() {
   const navigate = useNavigate();
 
   // These methods will update the state properties.
-  function updateForm(value) {
+  function updateForm(value: object) {
     return setForm((prev) => {
       return { ...prev, ...value };
     });
   }
 
   // This function will handle the submission.
-  async function onSubmit(e) {
+  async function onSubmit(e: FormEvent) {
     e.preventDefault();
 
     // When a post request is sent to the create url, we'll add a new record to the database.

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect, FormEvent } from "react";
 import { useParams, useNavigate } from "react-router";
 
 export default function Edit() {
@@ -38,13 +38,13 @@ export default function Edit() {
   }, [params.id, navigate]);
 
   // These methods will update the state properties.
-  function updateForm(value) {
+  function updateForm(value: object) {
     return setForm((prev) => {
       return { ...prev, ...value };
     });
   }
 
-  async function onSubmit(e) {
+  async function onSubmit(e: FormEvent) {
     e.preventDefault();
     const editedTodo = {
       description: form.description,
